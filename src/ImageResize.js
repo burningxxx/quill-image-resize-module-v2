@@ -132,7 +132,7 @@ export default class ImageResize {
     };
 
     hideOverlay = () => {
-        if (!this.overlay) {
+        if (!this.overlay || !this.quill.root.parentNode) {
             return;
         }
 
